@@ -3,128 +3,134 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Saurav | Portfolio</title>
-	<meta name="description" content="Personal portfolio website showcasing projects, skills, and contact information.">
+	<title>SAURAV Clothing | Future Streetwear</title>
+	<meta name="description" content="SAURAV Clothing: futuristic streetwear with premium drops, bold silhouettes, and immersive 3D fashion experiences.">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="bg-layer" aria-hidden="true"></div>
+	<div class="bg-ambient" aria-hidden="true"></div>
 
 	<header class="site-header">
 		<a class="logo" href="#home">SAURAV</a>
 		<button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
 		<nav class="site-nav" id="site-nav">
-			<a href="#about">About</a>
-			<a href="#projects">Projects</a>
-			<a href="#skills">Skills</a>
-			<a href="#contact">Contact</a>
+			<a href="#collection">Collection</a>
+			<a href="#story">Story</a>
+			<a href="#lookbook">Lookbook</a>
+			<a href="#join">Join</a>
 		</nav>
 	</header>
 
 	<main id="home">
-		<section class="hero section reveal">
-			<p class="eyebrow">Developer • Problem Solver • Builder</p>
-			<h1>I design and build digital experiences that feel alive.</h1>
-			<p class="hero-text">
-				I am Saurav, a web developer focused on clean code, meaningful design, and products that people love to use.
-			</p>
-			<div class="hero-actions">
-				<a class="btn btn-primary" href="#projects">View Projects</a>
-				<a class="btn btn-secondary" href="#contact">Hire Me</a>
-			</div>
-			<div class="quick-stats">
-				<article>
-					<h3>2+</h3>
-					<p>Years of Learning</p>
-				</article>
-				<article>
-					<h3>20+</h3>
-					<p>Practice Projects</p>
-				</article>
-				<article>
-					<h3>100%</h3>
-					<p>Curiosity Driven</p>
-				</article>
-			</div>
-		</section>
-
-		<section class="section reveal" id="about">
-			<div class="section-heading">
-				<p class="eyebrow">About</p>
-				<h2>Turning ideas into reliable, polished products.</h2>
-			</div>
-			<div class="about-grid">
+		<section class="hero reveal">
+			<div class="hero-copy">
+				<p class="eyebrow">Drop 01 | Neo Terrain</p>
+				<h1>Wear The Future In Every Layer.</h1>
 				<p>
-					My focus is building fast, responsive websites and web apps with strong usability. I enjoy shaping both visual design and implementation details so the final product feels cohesive.
+					SAURAV Clothing builds statement streetwear with technical fabrics, sharp cuts, and a rebellious spirit.
+					Explore the new collection in a 3D experience built for motion.
 				</p>
+				<div class="hero-actions">
+					<a class="btn btn-primary" href="#collection">Shop Drop</a>
+					<a class="btn btn-ghost" href="#lookbook">View Lookbook</a>
+				</div>
+				<div class="hero-stats">
+					<article>
+						<h3>48h</h3>
+						<p>Limited Release</p>
+					</article>
+					<article>
+						<h3>12</h3>
+						<p>Signature Pieces</p>
+					</article>
+					<article>
+						<h3>100%</h3>
+						<p>Premium Cotton</p>
+					</article>
+				</div>
+			</div>
+
+			<div class="hero-stage" aria-label="Interactive 3D fashion sculpture">
+				<canvas id="fashion-canvas"></canvas>
+				<div class="stage-tag tag-1">Carbon Black</div>
+				<div class="stage-tag tag-2">Urban Fit</div>
+				<div class="stage-tag tag-3">01/12 Edition</div>
+			</div>
+		</section>
+
+		<section class="section reveal" id="collection">
+			<div class="section-title-row">
+				<p class="eyebrow">Collection</p>
+				<h2>Core Pieces</h2>
+			</div>
+			<div class="product-grid">
+				<article class="product-card tilt-card">
+					<p class="card-chip">Best Seller</p>
+					<h3>Aero Hoodie</h3>
+					<p>Heavyweight build, oversized silhouette, matte metal hardware.</p>
+					<span>INR 2,999</span>
+				</article>
+				<article class="product-card tilt-card">
+					<p class="card-chip">New Drop</p>
+					<h3>Gridline Cargo</h3>
+					<p>Structured utility pockets, tapered fit, weather-ready texture.</p>
+					<span>INR 3,499</span>
+				</article>
+				<article class="product-card tilt-card">
+					<p class="card-chip">Limited</p>
+					<h3>Flux Jacket</h3>
+					<p>Layered shell design with reflective strips and hidden vents.</p>
+					<span>INR 4,299</span>
+				</article>
+			</div>
+		</section>
+
+		<section class="section story reveal" id="story">
+			<div class="story-panel">
+				<p class="eyebrow">Brand Story</p>
+				<h2>Designed In Motion. Built For Identity.</h2>
 				<p>
-					I work with modern frontend tools, understand backend basics, and prioritize readable code, performance, and accessibility. Every project is a chance to learn and improve.
+					SAURAV started as a sketchbook idea: make clothes that speak before you do.
+					Every stitch balances minimalist forms with futuristic attitude so your style feels precise, loud, and unmistakably yours.
 				</p>
 			</div>
-		</section>
-
-		<section class="section reveal" id="projects">
-			<div class="section-heading">
-				<p class="eyebrow">Projects</p>
-				<h2>Selected work</h2>
-			</div>
-			<div class="project-grid">
-				<article class="card">
-					<h3>TaskFlow App</h3>
-					<p>A productivity app with Kanban boards, deadlines, and drag-and-drop organization.</p>
-					<span>HTML • CSS • JavaScript</span>
-				</article>
-				<article class="card">
-					<h3>ShopLite</h3>
-					<p>An e-commerce frontend with product filters, cart logic, and smooth checkout UI.</p>
-					<span>React • CSS Modules</span>
-				</article>
-				<article class="card">
-					<h3>Insight Dashboard</h3>
-					<p>A responsive analytics interface showing trends, conversions, and real-time summaries.</p>
-					<span>JavaScript • Charting</span>
-				</article>
+			<div class="story-rail" aria-hidden="true">
+				<span>Street Code</span>
+				<span>Technical Fabric</span>
+				<span>Limited Drops</span>
+				<span>Street Code</span>
+				<span>Technical Fabric</span>
 			</div>
 		</section>
 
-		<section class="section reveal" id="skills">
-			<div class="section-heading">
-				<p class="eyebrow">Skills</p>
-				<h2>Tech I use</h2>
+		<section class="section reveal" id="lookbook">
+			<div class="section-title-row">
+				<p class="eyebrow">Lookbook</p>
+				<h2>Scenes From Drop 01</h2>
 			</div>
-			<div class="chip-row">
-				<span>HTML5</span>
-				<span>CSS3</span>
-				<span>JavaScript</span>
-				<span>React</span>
-				<span>Git</span>
-				<span>Responsive Design</span>
-				<span>REST APIs</span>
-				<span>UI Prototyping</span>
+			<div class="lookbook-grid">
+				<div class="look look-a"><p>Midnight Street</p></div>
+				<div class="look look-b"><p>Concrete Pulse</p></div>
+				<div class="look look-c"><p>Metro Dawn</p></div>
+				<div class="look look-d"><p>Afterlight</p></div>
 			</div>
 		</section>
 
-		<section class="section reveal contact" id="contact">
-			<div class="section-heading">
-				<p class="eyebrow">Contact</p>
-				<h2>Let us build something great together.</h2>
-			</div>
-			<p>Open to internships, freelance work, and full-time opportunities.</p>
-			<div class="contact-links">
-				<a href="mailto:saurav@example.com">saurav@example.com</a>
-				<a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-				<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-			</div>
+		<section class="section join reveal" id="join">
+			<p class="eyebrow">Community</p>
+			<h2>Join SAURAV Members For Early Access.</h2>
+			<p>Get first notifications for upcoming drops, behind-the-scenes previews, and members-only pricing.</p>
+			<a class="btn btn-primary" href="mailto:hello@sauravclothing.com">Join The List</a>
 		</section>
 	</main>
 
 	<footer class="site-footer">
-		<p>© <span id="year"></span> Saurav. Crafted with care.</p>
+		<p>© <span id="year"></span> SAURAV Clothing. All rights reserved.</p>
 	</footer>
 
-	<script src="script.js"></script>
+	<script type="module" src="script.js"></script>
 </body>
 </html>
